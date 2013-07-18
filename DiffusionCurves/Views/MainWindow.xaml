@@ -1,0 +1,164 @@
+﻿<Window x:Class="DiffusionCurves.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="559.291" Width="843.571" BorderBrush="Black" Background="#FF393939" WindowStartupLocation="CenterScreen"
+        Icon="DC_icon.ico">
+
+    <Window.Resources>
+        <RoutedUICommand x:Key="CreateKey" Text="Create" />
+        <RoutedUICommand x:Key="ColorKey" Text="Edit" />
+        <RoutedUICommand x:Key="OneKey" Text="One" />
+        <RoutedUICommand x:Key="TwoKey" Text="Two" />
+        <RoutedUICommand x:Key="ThreeKey" Text="Three" />
+        <RoutedUICommand x:Key="NextKey" Text="Next" />
+        <RoutedUICommand x:Key="PrevKey" Text="Prev" />
+        <RoutedUICommand x:Key="SaveKey" Text="Save" />
+        <RoutedUICommand x:Key="QuitKey" Text="Quit" />
+        <RoutedUICommand x:Key="SmoothCurvesKey" Text="SmoothCurves" />
+        <RoutedUICommand x:Key="CurvesCheckKey" Text="Curvescheck" />
+    </Window.Resources>
+
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource CreateKey}" 
+                    Executed="Create_Click" />
+        <CommandBinding Command="{StaticResource ColorKey}" 
+                    Executed="Color_Click" />
+        <CommandBinding Command="{StaticResource OneKey}" 
+                    Executed="One_Click" />
+        <CommandBinding Command="{StaticResource TwoKey}" 
+                    Executed="Two_Click" />
+        <CommandBinding Command="{StaticResource ThreeKey}" 
+                    Executed="Three_Click" />
+        <CommandBinding Command="{StaticResource NextKey}" 
+                    Executed="Next_Click" />
+        <CommandBinding Command="{StaticResource PrevKey}" 
+                    Executed="Prev_Click" />
+        <CommandBinding Command="{StaticResource SaveKey}" 
+                    Executed="SaveProjectItem_Click" />
+        <CommandBinding Command="{StaticResource QuitKey}" 
+                    Executed="Quit_Click" />
+        <CommandBinding Command="{StaticResource CurvesCheckKey}" 
+                    Executed="DisplayDiffusion_Toggled" />
+        <CommandBinding Command="{StaticResource SmoothCurvesKey}"
+                        Executed="SmoothCurves_Toggled" />
+    </Window.CommandBindings>
+
+    <Window.InputBindings>
+        <KeyBinding Key="D" Command="{StaticResource CreateKey}" />
+        <KeyBinding Key="F" Command="{StaticResource ColorKey}" />
+        <KeyBinding Key="S" Command="{StaticResource SmoothCurvesKey}" />
+        <KeyBinding Key="D1" Command="{StaticResource OneKey}" />
+        <KeyBinding Key="D2" Command="{StaticResource TwoKey}" />
+        <KeyBinding Key="D3" Command="{StaticResource ThreeKey}" />
+        <KeyBinding Key="Right" Command="{StaticResource NextKey}" />
+        <KeyBinding Key="Left" Command="{StaticResource PrevKey}" />
+        <KeyBinding Key="S" Modifiers="Control" Command="{StaticResource SaveKey}" />
+        <KeyBinding Key="Q" Modifiers="Control" Command="{StaticResource QuitKey}" />
+        <KeyBinding Key="W" Command="{StaticResource CurvesCheckKey}" />
+    </Window.InputBindings>
+
+    <Grid>
+        <DockPanel x:Name="TopPanel" Background="#FFEFEFF2">
+            <Border DockPanel.Dock="Top">
+                <Menu Name="Menu" Background="#FF393939" BorderThickness="0,0,0,0.5" ClipToBounds="True" BorderBrush="Black" FontFamily="Levenim MT">
+                    
+                    <Menu.Effect>
+                        <DropShadowEffect/>
+                    </Menu.Effect>
+                    
+                    <MenuItem Header="File" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White">
+                        <MenuItem Name="NewProject" Header="New Project" Click="NewProject_Click" Foreground="Black" />
+                        
+                        <MenuItem Name="Open" Header="Open" Click="Open_Click" Foreground="Black" />
+                        
+                        <MenuItem Name="CloseItem" Header="Close" Click="Close_Click" Foreground="Black" />
+
+                        <Separator />
+
+                        <MenuItem Name="SaveProjectItem" Header="Save Project"  InputGestureText="Ctrl+S" Click="SaveProjectItem_Click" Foreground="Black" />
+
+                        <MenuItem Name="ExportItem" Header="Export" Click="ExportItem_Click" Foreground="Black" />
+                        
+                        <Separator />
+                        
+                        <MenuItem Name="ImportImagesItem" Header="Import image(s)" Click="ImportImages_Click" Foreground="Black" />
+                        
+                        <Separator />
+                        
+                        <MenuItem Name="About" Header="About" Foreground="Black" Click="About_Click"/>
+                        
+                        <Separator />
+
+                        <MenuItem Name="Quit" Header="Quit" Click="Quit_Click" Foreground="Black" InputGestureText="Alt-F4"/>
+                        
+                    </MenuItem>
+                    
+                    <MenuItem Name="Interpolate" Header="Interpolate" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White">
+                        <MenuItem Name="InterpolateManual" Header="Manual" Click="InterpolateManual_Click"  Foreground="Black" />
+                        <MenuItem Name="InterpolateAutomatic" Header="Auto" Click="InterpolateAutomatic_Click"  Foreground="Black" />
+                    </MenuItem>
+
+                    <MenuItem Name="FrameItem" Header="Frame" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White">
+                        <MenuItem Name="NewFrame" Header="New Frame" Foreground="Black" Click="NewFrame_Click" />
+                        <MenuItem Name="DeleteFrame" Header="Delete Frame" Foreground="Black" Click="DeleteFrame_Click"/>
+                    </MenuItem>
+
+                    <MenuItem Name="ViewItem" Header="View" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White">
+                        <MenuItem Name="SmoothCurves" Header="Smooth Curves" IsCheckable="True" IsChecked="True" Checked="SmoothCurves_Checked" Unchecked="SmoothCurves_Unchecked"  Foreground="Black"/>
+                    </MenuItem>
+                </Menu>
+            </Border>
+
+            <Border Name="SequencePanel" DockPanel.Dock="Bottom" Height="171" Background="#FF393939" ClipToBounds="True" BorderThickness="0,0,0,0" BorderBrush="Black" Margin="0,-1"/>
+
+            <Border DockPanel.Dock="Left" Width="80" HorizontalAlignment="Left" BorderBrush="Black">
+                <StackPanel Name="Buttons" Background="#393939">
+                    <Button Name="Create" Content="create." Style="{StaticResource ToolButton}" Margin="0,10,0,0" Click="Create_Click" />
+                    
+                    <Button x:Name="Color" Content="color." Style="{StaticResource ToolButton}" Margin="10,10,10,0" Click="Color_Click" />
+                </StackPanel>
+            </Border>
+
+            <Border DockPanel.Dock="Right" Width="40" HorizontalAlignment="Right" Background="#FF393939">
+                <StackPanel Name="LabelPanel" >
+                    <Button Name="One" Style="{StaticResource LabelButton}" Content="1." Margin="0,15,0,0" Click="One_Click" />
+                    
+                    <Button Name="Two" Style="{StaticResource LabelButton}" Content="2." Margin="0,15,0,0" Click="Two_Click" />
+                    
+                    <Button Name="Three" Style="{StaticResource LabelButton}" Content="3." Margin="0,15,0,0" Click="Three_Click" />
+                </StackPanel>
+            </Border>
+
+            <Border Name="Bottom" DockPanel.Dock="Bottom" VerticalAlignment="Bottom" Height="25" Background="#FF393939">
+                <DockPanel LastChildFill="True">
+                    <Border DockPanel.Dock="Left">
+                        <StackPanel Orientation="Horizontal" Width="130" Margin="15,6">
+                            <CheckBox Name="CheckCurves" Foreground="White" Checked="CheckCurves_Checked" Unchecked="CheckCurves_Unchecked" IsChecked="True"/>
+                            <Label Name="CheckCurvesLabel" Content="show diffusion" Foreground="White" Margin="0,-7"/>
+                        </StackPanel>
+                    </Border>
+                    <Border DockPanel.Dock="Right">
+                        <StackPanel Orientation="Horizontal" Margin="15,6" Width="130">
+                            <Label Name="IterationsLabel" Content="20" Width="23" Foreground="White" Margin="0,-6" />
+                            <Slider Name="DiffusionSlider" Foreground="AliceBlue" Margin="0,-3,15,0" Width="90" ValueChanged="DiffusionSlider_ValueChanged" Minimum="0" Maximum="80" Value="20"/>
+                        </StackPanel>
+                        
+                    </Border>
+                    <Border Width="241">
+                        <StackPanel Name="NextPrevPanel" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,-0.2">
+                            <Button Name="Prev" Content="◄" Style="{StaticResource NextPrev}" Click="Prev_Click" />
+
+                            <Button Name="Next" Content="►" Style="{StaticResource NextPrev}" Click="Next_Click" />
+                        </StackPanel>
+                    </Border>                    
+                </DockPanel>
+            </Border>
+
+            <Border Name="ViewPort" BorderThickness="2" BorderBrush="#FF494949" Background="Black" >
+                <Grid Name="GLControl" MouseDown="GLControl_MouseDown" MouseLeftButtonDown="GLControl_MouseDown"/>
+            </Border>
+
+        </DockPanel>
+
+    </Grid>
+</Window>

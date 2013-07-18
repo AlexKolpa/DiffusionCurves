@@ -1,0 +1,20 @@
+﻿<Window x:Class="DiffusionCurves.Views.CloseDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Close" Height="150" Width="350" Background="#FF393939" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Icon="DC_icon.ico">
+    <StackPanel Orientation="Vertical">
+
+        <StackPanel VerticalAlignment="Top" Margin="15,15" Orientation="Vertical">
+            <Label Content="Are you sure you want to close the project?" Foreground="White"/>
+            <Label Content="Any unsaved changes will be lost." Foreground="White"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="300" Margin="0,5">
+            <Button Name="Cancel" Content="cancel." Style="{StaticResource Standard}" Click="Cancel_Click" Width="100" Height="23" Margin="-10,0"/>
+            <Button Name="DontSave" Content="don&apos;t save." Style="{StaticResource Standard}" Width="100" Click="DontSave_Click" Height="23" Margin="35,0"/>
+            <Button Name="Save" Content="save." Style="{StaticResource Standard}" Width="100" Click="Save_Click" Height="23" Margin="-30,0"/>
+        </StackPanel>
+
+    </StackPanel>
+</Window>

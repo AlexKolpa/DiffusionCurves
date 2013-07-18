@@ -1,0 +1,24 @@
+﻿<Window x:Class="DiffusionCurves.Views.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="345" Width="350" Background="#FF393939" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Icon="DC_icon.ico">
+    <StackPanel Orientation="Vertical">
+
+        <StackPanel VerticalAlignment="Top" Margin="15,15" Orientation="Vertical">
+            <Label Content="DiffusionCurves" Foreground="White" FontWeight="Bold" FontSize="20" Margin="0,0,0,10"/>
+            <Label Content="For the BSc. Computer Science and Engineering project" Foreground="White"/>
+            <Label Content="the Computer Graphics Group at TU Delft asked us to" Foreground="White"/>
+            <Label Content="build a system for diffusion curves creation." Foreground="White"/>
+            <Label Content="Authors:" Foreground="White" Margin="0,10"/>
+            <Label Content="- Alex Kolpa" Foreground="White"/>
+            <Label Content="- Maniek Santokhi" Foreground="White"/>
+            <Label Content="- Jerome Vincendon" Foreground="White"/>
+        </StackPanel>
+
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="300" Margin="0,0">
+            <Button Name="Close" Content="close." HorizontalAlignment="Right" Style="{StaticResource Standard}" Width="100" Click="Close_Click" Height="23" />
+        </StackPanel>
+
+    </StackPanel>
+</Window>

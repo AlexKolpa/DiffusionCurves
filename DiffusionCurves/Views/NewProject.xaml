@@ -1,0 +1,65 @@
+﻿<Window x:Class="DiffusionCurves.NewProject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Project" Height="331.813" Width="350" Background="#FF393939" ShowInTaskbar="False" ResizeMode="NoResize" 
+        Icon="DC_icon.ico">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition MinWidth="202.4" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="name" HorizontalAlignment="Left" Margin="10,15,5,5" Foreground="White" />
+            
+            <Label Grid.Row="1" Grid.Column="0" Content="destination" HorizontalAlignment="Left" Margin="10,10,5,5" Foreground="White" />
+
+            <TextBox Name="Filename_textbox" Grid.Row="0" Grid.Column="1" Style="{StaticResource Standard_Textbox}"
+                     GotKeyboardFocus="Filename_textbox_GotKeyboardFocus" HorizontalAlignment="Left" Height="23" 
+                     Margin="0,15,0,0" TextWrapping="NoWrap" Text="&#60;name or leave empty&#62;" VerticalAlignment="Top" 
+                     Width="227" VerticalContentAlignment="Center" Padding="0" SelectionBrush="#FF16A085" />
+            
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                <TextBox Name="Destination_textbox" GotKeyboardFocus="Destination_textbox_GotKeyboardFocus" Style="{StaticResource Standard_Textbox}"
+                         HorizontalAlignment="Left" Height="23" TextWrapping="NoWrap" Text="\&#60;dest. or leave empty&#62;" 
+                         Width="156" VerticalContentAlignment="Center"
+                         SelectionBrush="#FF16A085" />
+                <Button Name="Browse" Style="{StaticResource Standard}" Click="Browse_Click" Content="browse." Width="60" Margin="10" Height="23"/>
+            </StackPanel>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="size" HorizontalAlignment="Left" Margin="10,25,5,5" Foreground="White" />
+
+            <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="0 15">
+                <TextBox Name="Width" Foreground="White" Text="800" Style="{StaticResource Standard_Textbox}"
+                         HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" 
+                         Width="45" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" 
+                         SelectionBrush="#FF16A085" />
+
+                <Label Content="x" HorizontalAlignment="Left" Margin="10,10,5,5" Foreground="White" />
+
+                <TextBox Name="Height" Style="{StaticResource Standard_Textbox}"
+                         HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="600" 
+                         Width="45" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White"
+                         SelectionBrush="#FF16A085" />
+
+                <Label Content="pixels" HorizontalAlignment="Left" Margin="10,10,5,5" Foreground="White" />
+            </StackPanel>
+
+            <Label Grid.Row="3" Grid.Column="0" Content="filetype" HorizontalAlignment="Left" Margin="10,15,5,5" Foreground="White" />
+            <Label Grid.Row="3" Grid.Column="1" Content=".dcip" HorizontalAlignment="Left" Margin="0,15,0,0" Foreground="White" FontStyle="Italic"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="imagetype" HorizontalAlignment="Left" Margin="10,10,5,5" Foreground="White" RenderTransformOrigin="0.5,0.504" />
+            <Label Grid.Row="4" Grid.Column="1" Content=".jpeg" HorizontalAlignment="Left" Margin="0,10,0,0" Foreground="White" FontStyle="Italic"/>
+        </Grid>
+        <DockPanel VerticalAlignment="Bottom">
+            <Button Name="Cancel" Content="cancel." Style="{StaticResource Standard}" Click="Cancel_Click" Width="100" DockPanel.Dock="Left" HorizontalAlignment="Left" Margin="15,0,0,10" Height="23"/>
+            <Button Name="CreateProject" Content="create project." Style="{StaticResource Standard}" Width="130" DockPanel.Dock="Left" HorizontalAlignment="Right" Margin="0,0,25,10" Click="CreateProject_Click" Height="23"/>
+        </DockPanel>
+
+    </DockPanel>
+</Window>

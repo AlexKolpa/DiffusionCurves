@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DiffusionCurves.App" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.MainWindow">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACRBEwIAAFAgAqiGGQgCBAAAwekKARCTADMSCYpAE=</HashCode>
+      <FileName>Views\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.NewProject" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAQAAAAgAAAAAAAAAACAAAAAAAAAFAAACAAAAAAA=</HashCode>
+      <FileName>Views\NewProject.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.SequencePanel" Collapsed="true">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SequencePanel.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.ThumbnailFrame" Collapsed="true">
+    <Position X="18.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ThumbnailFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Auxillary.LoadSave" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAABAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auxilliary\LoadSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Auxillary.ValidateInput" Collapsed="true">
+    <Position X="8" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAAAAAAAAEAAAACBEAAAAAAAAAAAAAAIAAAAAAAAQA=</HashCode>
+      <FileName>Auxilliary\ValidateInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Diffusion.DiffusionPathControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAQAAAAAAgAAAAAAAAACEAAAAAAAAAQACAAAAAAAgE=</HashCode>
+      <FileName>Diffusion\DiffusionPathControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.Diffusion.EditorStateControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgAAAAAQAgAAAMAAAAAAAAAAAQACAQAIJEgAgAA=</HashCode>
+      <FileName>Diffusion\EditorStateControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.Diffusion.GLControlHost" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAEAAAAAgBDAEgAggIAAFhRAAAUBAAAAAAAiAA=</HashCode>
+      <FileName>Diffusion\GLControlHost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Diffusion.RenderStateControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQABgAAEAEgIAAAAAAgAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Diffusion\RenderStateControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.Events.PointClickedEventArgs" Collapsed="true">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Events\PointClickedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Events.StateEventArgs" Collapsed="true">
+    <Position X="16.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACCAAAAgACAAAAAQDBQAEAAgACAAJABgAAA=</HashCode>
+      <FileName>Events\StateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Storage.Export" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Export\Export.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Import.ImportImages" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Import\ImportImages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Interpolation.AutoInterpolationEventArgs" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interpolation\AutoInterpolationEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Interpolation.InterpolationControl" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAABAAAAAAEAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interpolation\InterpolationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Interpolation.Interpolator" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAEAQBQAAAAAAAgAAAABAAAAAAA=</HashCode>
+      <FileName>Interpolation\Interpolator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Interpolation.PyramidOpticalFlowInterpolator" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAiAAAAAAAQAAAAAAAAAAAAEAEAAAAA=</HashCode>
+      <FileName>Interpolation\PyramidOpticalFlowInterpolator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Model.BezierPoint" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAQACIgkgAAIIAAAgQAAAAEAAAAAAAAAABA=</HashCode>
+      <FileName>Model\BezierPoint.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.Model.DiffusionBuffers" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAABAAAAAAAAAAAAAAAQEAgAABAKAAABAgAE=</HashCode>
+      <FileName>Model\DiffusionBuffers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Model.EditorState" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAIAAAAAQAARAAAAEQAACAAgAAAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>Model\EditorState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Model.Frame" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>Model\Frame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Model.FramesContainer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACBAAIAAAAAAoAQgggBAAAAACAAAAABEAAA=</HashCode>
+      <FileName>Model\FramesContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.Model.ObservableRangeCollection&lt;T&gt;" Collapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAIAEACA=</HashCode>
+      <FileName>Model\ObservableRangeCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Model.Path" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFEAgAAAAAQgFAAgABAAAQACACAAAAAAIAAQAAQARA=</HashCode>
+      <FileName>Model\Path.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Model.PathContainer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAQAQAAEAgAAoAAQACAAQAAgAgAAAAABBABA=</HashCode>
+      <FileName>Model\PathContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.Model.ProjectState" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABACACKQAAAAIAEBAgpAAAAAkAAAwAABBAAA=</HashCode>
+      <FileName>Model\ProjectState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.Model.RenderState" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACEABAAACAAAIAAAAAKAgEAigIBAAAAAAAAAAgAgAA=</HashCode>
+      <FileName>Model\RenderState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.OpenGL.BasicShader" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADCAAEQBAAAIAEQQCAAYAAAACIAAAAAEAAIwAAACAIA=</HashCode>
+      <FileName>OpenGL\BasicShader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DiffusionCurves.OpenGL.DefaultShader" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAEAAAAAAAAAACAAAACAAAEgIA=</HashCode>
+      <FileName>OpenGL\DefaultShader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.OpenGL.DiffusionRenderer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>phAABAAUQYAAAoBZogGAQCIAkIBgEAAUBABkAYACCgE=</HashCode>
+      <FileName>OpenGL\DiffusionRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DiffusionCurves.OpenGL.NormalShader" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABgAAIIAUACAAEAAAQCAAAAACAACACAEQAAoA=</HashCode>
+      <FileName>OpenGL\NormalShader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.OpenGL.TexturedShader" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAIBAQACAAEAAAgCAAAAACAAAAKAAAAAIA=</HashCode>
+      <FileName>OpenGL\TexturedShader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parago.Windows.ProgressDialog" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAIAAEAAAAAQAAAAggAQAAAAAAAAAAAAAAAAApAA=</HashCode>
+      <FileName>ProgressDialog\ProgressDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parago.Windows.ProgressDialogResult" Collapsed="true">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAQAAAAAAAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ProgressDialog\ProgressDialogResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parago.Windows.ProgressDialogSettings" Collapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACABAAAAAAAAAEAAAgAAAAAAAAAAAAAAAAEQAAA=</HashCode>
+      <FileName>ProgressDialog\ProgressDialogSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parago.Windows.Controls.WindowSettings" Collapsed="true">
+    <Position X="9.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACCAAAQAAAAAKIAAAAAAIAhAAAAgAAAAACgAAAQA=</HashCode>
+      <FileName>ProgressDialog\WindowSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Properties.Resources" Collapsed="true">
+    <Position X="9.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Properties.Settings" Collapsed="true">
+    <Position X="15" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Storage.CreateProject" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAA=</HashCode>
+      <FileName>Storage\CreateProject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Storage.LoadProject" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAABAASAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Storage\LoadProject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Storage.SaveProject" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Storage\SaveProject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.About" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Views\About.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.AutomaticInterpolation" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQABAAAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AutomaticInterpolation.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.BitmapDisplay" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAAAAAICAAAACEAAAABAAAAAAAQABAAA=</HashCode>
+      <FileName>Views\BitmapDisplay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.CloseDialog" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAABAAAAEAAAAAAAAAAQAA=</HashCode>
+      <FileName>Views\CloseDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.ExitDialog" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAQAQ=</HashCode>
+      <FileName>Views\ExitDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.NumericTextBox" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAKAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\NumericTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.PreviewAdorner" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAASAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAAIAMCAGg=</HashCode>
+      <FileName>Views\PreviewAdorner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.SaveProjectGUI" Collapsed="true">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAgAAAAAAQAAACAAAAAAEAAEAAAGAAAAAAA=</HashCode>
+      <FileName>Views\SaveProjectGUI.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.SliderPanel" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AANCRAIAABAICABQIAAAAAAAAgQAAAAAABAAABCAIAA=</HashCode>
+      <FileName>Views\SliderPanel.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiffusionCurves.Views.TimeLinePanel" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TimeLinePanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DiffusionCurves.Diffusion.IDiffusionPathControl" Collapsed="true">
+    <Position X="8" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAEAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>ControlInterface\IDiffusionPathControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DiffusionCurves.Diffusion.IDiffusionRenderer" Collapsed="true">
+    <Position X="9.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAQAAAgAAAAAAAAIAgAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ControlInterface\IDiffusionRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DiffusionCurves.Diffusion.IEditorStateControl" Collapsed="true">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAgAAAEAAAAAAAAAAAQAAAAAABAAAAAA=</HashCode>
+      <FileName>ControlInterface\IEditorStateControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DiffusionCurves.Diffusion.IRenderStateControl" Collapsed="true">
+    <Position X="15" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAEAAgIAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ControlInterface\IRenderStateControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DiffusionCurves.Model.IPathContainer" Collapsed="true">
+    <Position X="13.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAEAgAAoAAQACAAQAAAAgAAAAABBABA=</HashCode>
+      <FileName>Model\IPathContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DiffusionCurves.OpenGL.IShader" Collapsed="true">
+    <Position X="16.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAEAAAAAIAAAACAAQAAAAAAAAAAAAAAAgAAACAAA=</HashCode>
+      <FileName>OpenGL\IShader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DiffusionCurves.Views.ITimeLine" Collapsed="true">
+    <Position X="18.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Views\ITimeLine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
